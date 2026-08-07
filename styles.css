@@ -329,3 +329,75 @@ header.page-hero h1{
   cursor:not-allowed;
   pointer-events:none;
 }
+
+
+/* Regional 86 clubs */
+.regional-club-grid{
+  display:grid;
+  grid-template-columns:repeat(5,minmax(0,1fr));
+  gap:18px;
+  margin-top:32px;
+}
+.regional-club-card{
+  display:flex;
+  flex-direction:column;
+  min-width:0;
+  padding:20px;
+  border:1px solid var(--line);
+  border-radius:var(--radius);
+  background:linear-gradient(145deg,rgba(255,255,255,.065),rgba(255,255,255,.025));
+  box-shadow:var(--shadow);
+  transition:transform .24s ease,border-color .24s ease,background .24s ease;
+}
+.regional-club-card:hover{
+  transform:translateY(-6px);
+  border-color:rgba(255,123,44,.52);
+  background:linear-gradient(145deg,rgba(241,91,181,.09),rgba(255,255,255,.03));
+}
+.regional-club-logo{
+  height:145px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding:16px;
+  margin-bottom:18px;
+  background:#09090b;
+  border:1px solid rgba(255,255,255,.08);
+  border-radius:18px;
+  overflow:hidden;
+}
+.regional-club-logo img{
+  width:100%;
+  height:100%;
+  object-fit:contain;
+}
+.regional-club-card h3{
+  margin:0 0 12px;
+  font-size:1rem;
+  line-height:1.15;
+  text-transform:uppercase;
+}
+.regional-club-card span{
+  margin-top:auto;
+  font-size:.72rem;
+  font-weight:900;
+  text-transform:uppercase;
+  letter-spacing:.1em;
+  background:var(--gradient);
+  background-clip:text;
+  -webkit-background-clip:text;
+  color:transparent;
+}
+.regional-club-logo--placeholder strong{
+  font-size:2rem;
+  letter-spacing:-.04em;
+}
+@media(max-width:1050px){
+  .regional-club-grid{grid-template-columns:repeat(3,minmax(0,1fr))}
+}
+@media(max-width:700px){
+  .regional-club-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+@media(max-width:460px){
+  .regional-club-grid{grid-template-columns:1fr}
+}
