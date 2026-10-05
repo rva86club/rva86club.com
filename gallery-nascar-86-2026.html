@@ -1,262 +1,302 @@
 ```html
-<!DOCTYPE html>
+<!doctype html>
+
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>NASCAR 86 Meet 2026 | RVA 86 Club</title>
-
-  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="assets/favicon.png">
+  <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
+  <nav class="nav" aria-label="Main navigation">
+    <div class="container nav-inner">
+      <a class="brand" href="index.html" aria-label="RVA 86 Club home">
+        <img src="assets/logos/rva86-typeface-white.png" alt="RVA 86 Club wordmark">
+      </a>
 
-  <header class="site-header">
-    <nav class="nav">
-      <a href="index.html" class="nav-logo">RVA 86</a>
+      <button class="menu-button" type="button" aria-expanded="false" aria-controls="nav-links">
+        Menu
+      </button>
 
-      <div class="nav-links">
+      <div class="nav-links" id="nav-links">
         <a href="index.html">Home</a>
         <a href="about.html">About</a>
-        <a href="gallery.html" aria-current="page">Gallery</a>
-        <a href="events.html">Events</a>
+        <a href="calendar.html">Calendar</a>
+        <a href="event-submissions.html">Event Submissions</a>
+        <a href="gallery.html" class="active" aria-current="page">Gallery</a>
+        <a href="merch.html">Merch</a>
+        <a href="contact.html">Contact</a>
       </div>
-    </nav>
+    </div>
+  </nav>
+
+  <header
+    class="album-hero"
+    style="--album-cover:url('assets/gallery/nascar-2026/nascar%20(1%20of%2022).jpg')"
+  >
+    <div class="container album-hero-content reveal">
+      <a class="album-back" href="gallery.html">← Back to gallery</a>
+
+      <div class="eyebrow">2026 Album</div>
+
+      <h1>NASCAR 86 Meet</h1>
+
+      <p>22 selected photos</p>
+    </div>
   </header>
 
   <main>
+    <section class="section album-section">
+      <div class="container">
 
-    <section
-      class="album-hero"
-      style="--album-cover: url('assets/gallery/nascar-2026/nascar%20(1%20of%2022).jpg');"
-    >
-      <div class="album-hero-overlay"></div>
+        <div class="album-toolbar reveal">
+          <div>
+            <strong>NASCAR 86 Meet</strong>
+            <span>2026</span>
+          </div>
 
-      <div class="album-hero-content">
-        <a href="gallery.html" class="back-link">← Back to Gallery</a>
+          <p>Click any photo to open the full-screen viewer.</p>
+        </div>
 
-        <small>2026</small>
-        <h1>NASCAR 86 Meet</h1>
-        <p>22 photos</p>
+        <div class="gallery-photo-grid">
+
+          <button class="gallery-photo reveal" type="button"
+            data-full="assets/gallery/nascar-2026/nascar%20(1%20of%2022).jpg"
+            aria-label="Open photo 1 of 22">
+            <img
+              src="assets/gallery/nascar-2026/nascar%20(1%20of%2022).jpg"
+              alt="NASCAR 86 Meet 2026 photo 1"
+              loading="eager"
+              fetchpriority="high"
+              decoding="async">
+          </button>
+
+          <button class="gallery-photo reveal" type="button"
+            data-full="assets/gallery/nascar-2026/nascar%20(2%20of%2022).jpg"
+            aria-label="Open photo 2 of 22">
+            <img
+              src="assets/gallery/nascar-2026/nascar%20(2%20of%2022).jpg"
+              alt="NASCAR 86 Meet 2026 photo 2"
+              loading="eager"
+              fetchpriority="high"
+              decoding="async">
+          </button>
+
+          <button class="gallery-photo reveal" type="button"
+            data-full="assets/gallery/nascar-2026/nascar%20(3%20of%2022).jpg"
+            aria-label="Open photo 3 of 22">
+            <img
+              src="assets/gallery/nascar-2026/nascar%20(3%20of%2022).jpg"
+              alt="NASCAR 86 Meet 2026 photo 3"
+              loading="eager"
+              decoding="async">
+          </button>
+
+          <button class="gallery-photo reveal" type="button"
+            data-full="assets/gallery/nascar-2026/nascar%20(4%20of%2022).jpg"
+            aria-label="Open photo 4 of 22">
+            <img
+              src="assets/gallery/nascar-2026/nascar%20(4%20of%2022).jpg"
+              alt="NASCAR 86 Meet 2026 photo 4"
+              loading="lazy"
+              decoding="async">
+          </button>
+
+          <button class="gallery-photo reveal" type="button"
+            data-full="assets/gallery/nascar-2026/nascar%20(5%20of%2022).jpg"
+            aria-label="Open photo 5 of 22">
+            <img
+              src="assets/gallery/nascar-2026/nascar%20(5%20of%2022).jpg"
+              alt="NASCAR 86 Meet 2026 photo 5"
+              loading="lazy"
+              decoding="async">
+          </button>
+
+          <button class="gallery-photo reveal" type="button"
+            data-full="assets/gallery/nascar-2026/nascar%20(6%20of%2022).jpg"
+            aria-label="Open photo 6 of 22">
+            <img
+              src="assets/gallery/nascar-2026/nascar%20(6%20of%2022).jpg"
+              alt="NASCAR 86 Meet 2026 photo 6"
+              loading="lazy"
+              decoding="async">
+          </button>
+
+          <button class="gallery-photo reveal" type="button"
+            data-full="assets/gallery/nascar-2026/nascar%20(7%20of%2022).jpg"
+            aria-label="Open photo 7 of 22">
+            <img
+              src="assets/gallery/nascar-2026/nascar%20(7%20of%2022).jpg"
+              alt="NASCAR 86 Meet 2026 photo 7"
+              loading="lazy"
+              decoding="async">
+          </button>
+
+          <button class="gallery-photo reveal" type="button"
+            data-full="assets/gallery/nascar-2026/nascar%20(8%20of%2022).jpg"
+            aria-label="Open photo 8 of 22">
+            <img
+              src="assets/gallery/nascar-2026/nascar%20(8%20of%2022).jpg"
+              alt="NASCAR 86 Meet 2026 photo 8"
+              loading="lazy"
+              decoding="async">
+          </button>
+
+          <button class="gallery-photo reveal" type="button"
+            data-full="assets/gallery/nascar-2026/nascar%20(9%20of%2022).jpg"
+            aria-label="Open photo 9 of 22">
+            <img
+              src="assets/gallery/nascar-2026/nascar%20(9%20of%2022).jpg"
+              alt="NASCAR 86 Meet 2026 photo 9"
+              loading="lazy"
+              decoding="async">
+          </button>
+
+          <button class="gallery-photo reveal" type="button"
+            data-full="assets/gallery/nascar-2026/nascar%20(10%20of%2022).jpg"
+            aria-label="Open photo 10 of 22">
+            <img
+              src="assets/gallery/nascar-2026/nascar%20(10%20of%2022).jpg"
+              alt="NASCAR 86 Meet 2026 photo 10"
+              loading="lazy"
+              decoding="async">
+          </button>
+
+          <button class="gallery-photo reveal" type="button"
+            data-full="assets/gallery/nascar-2026/nascar%20(11%20of%2022).jpg"
+            aria-label="Open photo 11 of 22">
+            <img
+              src="assets/gallery/nascar-2026/nascar%20(11%20of%2022).jpg"
+              alt="NASCAR 86 Meet 2026 photo 11"
+              loading="lazy"
+              decoding="async">
+          </button>
+
+          <button class="gallery-photo reveal" type="button"
+            data-full="assets/gallery/nascar-2026/nascar%20(12%20of%2022).jpg"
+            aria-label="Open photo 12 of 22">
+            <img
+              src="assets/gallery/nascar-2026/nascar%20(12%20of%2022).jpg"
+              alt="NASCAR 86 Meet 2026 photo 12"
+              loading="lazy"
+              decoding="async">
+          </button>
+
+          <button class="gallery-photo reveal" type="button"
+            data-full="assets/gallery/nascar-2026/nascar%20(13%20of%2022).jpg"
+            aria-label="Open photo 13 of 22">
+            <img
+              src="assets/gallery/nascar-2026/nascar%20(13%20of%2022).jpg"
+              alt="NASCAR 86 Meet 2026 photo 13"
+              loading="lazy"
+              decoding="async">
+          </button>
+
+          <button class="gallery-photo reveal" type="button"
+            data-full="assets/gallery/nascar-2026/nascar%20(14%20of%2022).jpg"
+            aria-label="Open photo 14 of 22">
+            <img
+              src="assets/gallery/nascar-2026/nascar%20(14%20of%2022).jpg"
+              alt="NASCAR 86 Meet 2026 photo 14"
+              loading="lazy"
+              decoding="async">
+          </button>
+
+          <button class="gallery-photo reveal" type="button"
+            data-full="assets/gallery/nascar-2026/nascar%20(15%20of%2022).jpg"
+            aria-label="Open photo 15 of 22">
+            <img
+              src="assets/gallery/nascar-2026/nascar%20(15%20of%2022).jpg"
+              alt="NASCAR 86 Meet 2026 photo 15"
+              loading="lazy"
+              decoding="async">
+          </button>
+
+          <button class="gallery-photo reveal" type="button"
+            data-full="assets/gallery/nascar-2026/nascar%20(16%20of%2022).jpg"
+            aria-label="Open photo 16 of 22">
+            <img
+              src="assets/gallery/nascar-2026/nascar%20(16%20of%2022).jpg"
+              alt="NASCAR 86 Meet 2026 photo 16"
+              loading="lazy"
+              decoding="async">
+          </button>
+
+          <button class="gallery-photo reveal" type="button"
+            data-full="assets/gallery/nascar-2026/nascar%20(17%20of%2022).jpg"
+            aria-label="Open photo 17 of 22">
+            <img
+              src="assets/gallery/nascar-2026/nascar%20(17%20of%2022).jpg"
+              alt="NASCAR 86 Meet 2026 photo 17"
+              loading="lazy"
+              decoding="async">
+          </button>
+
+          <button class="gallery-photo reveal" type="button"
+            data-full="assets/gallery/nascar-2026/nascar%20(18%20of%2022).jpg"
+            aria-label="Open photo 18 of 22">
+            <img
+              src="assets/gallery/nascar-2026/nascar%20(18%20of%2022).jpg"
+              alt="NASCAR 86 Meet 2026 photo 18"
+              loading="lazy"
+              decoding="async">
+          </button>
+
+          <button class="gallery-photo reveal" type="button"
+            data-full="assets/gallery/nascar-2026/nascar%20(19%20of%2022).jpg"
+            aria-label="Open photo 19 of 22">
+            <img
+              src="assets/gallery/nascar-2026/nascar%20(19%20of%2022).jpg"
+              alt="NASCAR 86 Meet 2026 photo 19"
+              loading="lazy"
+              decoding="async">
+          </button>
+
+          <button class="gallery-photo reveal" type="button"
+            data-full="assets/gallery/nascar-2026/nascar%20(20%20of%2022).jpg"
+            aria-label="Open photo 20 of 22">
+            <img
+              src="assets/gallery/nascar-2026/nascar%20(20%20of%2022).jpg"
+              alt="NASCAR 86 Meet 2026 photo 20"
+              loading="lazy"
+              decoding="async">
+          </button>
+
+          <button class="gallery-photo reveal" type="button"
+            data-full="assets/gallery/nascar-2026/nascar%20(21%20of%2022).jpg"
+            aria-label="Open photo 21 of 22">
+            <img
+              src="assets/gallery/nascar-2026/nascar%20(21%20of%2022).jpg"
+              alt="NASCAR 86 Meet 2026 photo 21"
+              loading="lazy"
+              decoding="async">
+          </button>
+
+          <button class="gallery-photo reveal" type="button"
+            data-full="assets/gallery/nascar-2026/nascar%20(22%20of%2022).jpg"
+            aria-label="Open photo 22 of 22">
+            <img
+              src="assets/gallery/nascar-2026/nascar%20(22%20of%2022).jpg"
+              alt="NASCAR 86 Meet 2026 photo 22"
+              loading="lazy"
+              decoding="async">
+          </button>
+
+        </div>
       </div>
     </section>
-
-    <section class="gallery-section">
-      <div class="gallery-grid">
-
-        <button class="gallery-photo reveal" type="button"
-          data-full="assets/gallery/nascar-2026/nascar%20(1%20of%2022).jpg"
-          aria-label="View photo 1 of 22">
-          <img src="assets/gallery/nascar-2026/nascar%20(1%20of%2022).jpg"
-               alt="NASCAR 86 Meet photo 1 of 22"
-               loading="eager"
-               fetchpriority="high"
-               decoding="async">
-        </button>
-
-        <button class="gallery-photo reveal" type="button"
-          data-full="assets/gallery/nascar-2026/nascar%20(2%20of%2022).jpg"
-          aria-label="View photo 2 of 22">
-          <img src="assets/gallery/nascar-2026/nascar%20(2%20of%2022).jpg"
-               alt="NASCAR 86 Meet photo 2 of 22"
-               loading="eager"
-               fetchpriority="high"
-               decoding="async">
-        </button>
-
-        <button class="gallery-photo reveal" type="button"
-          data-full="assets/gallery/nascar-2026/nascar%20(3%20of%2022).jpg"
-          aria-label="View photo 3 of 22">
-          <img src="assets/gallery/nascar-2026/nascar%20(3%20of%2022).jpg"
-               alt="NASCAR 86 Meet photo 3 of 22"
-               loading="eager"
-               decoding="async">
-        </button>
-
-        <button class="gallery-photo reveal" type="button"
-          data-full="assets/gallery/nascar-2026/nascar%20(4%20of%2022).jpg"
-          aria-label="View photo 4 of 22">
-          <img src="assets/gallery/nascar-2026/nascar%20(4%20of%2022).jpg"
-               alt="NASCAR 86 Meet photo 4 of 22"
-               loading="lazy"
-               decoding="async">
-        </button>
-
-        <button class="gallery-photo reveal" type="button"
-          data-full="assets/gallery/nascar-2026/nascar%20(5%20of%2022).jpg"
-          aria-label="View photo 5 of 22">
-          <img src="assets/gallery/nascar-2026/nascar%20(5%20of%2022).jpg"
-               alt="NASCAR 86 Meet photo 5 of 22"
-               loading="lazy"
-               decoding="async">
-        </button>
-
-        <button class="gallery-photo reveal" type="button"
-          data-full="assets/gallery/nascar-2026/nascar%20(6%20of%2022).jpg"
-          aria-label="View photo 6 of 22">
-          <img src="assets/gallery/nascar-2026/nascar%20(6%20of%2022).jpg"
-               alt="NASCAR 86 Meet photo 6 of 22"
-               loading="lazy"
-               decoding="async">
-        </button>
-
-        <button class="gallery-photo reveal" type="button"
-          data-full="assets/gallery/nascar-2026/nascar%20(7%20of%2022).jpg"
-          aria-label="View photo 7 of 22">
-          <img src="assets/gallery/nascar-2026/nascar%20(7%20of%2022).jpg"
-               alt="NASCAR 86 Meet photo 7 of 22"
-               loading="lazy"
-               decoding="async">
-        </button>
-
-        <button class="gallery-photo reveal" type="button"
-          data-full="assets/gallery/nascar-2026/nascar%20(8%20of%2022).jpg"
-          aria-label="View photo 8 of 22">
-          <img src="assets/gallery/nascar-2026/nascar%20(8%20of%2022).jpg"
-               alt="NASCAR 86 Meet photo 8 of 22"
-               loading="lazy"
-               decoding="async">
-        </button>
-
-        <button class="gallery-photo reveal" type="button"
-          data-full="assets/gallery/nascar-2026/nascar%20(9%20of%2022).jpg"
-          aria-label="View photo 9 of 22">
-          <img src="assets/gallery/nascar-2026/nascar%20(9%20of%2022).jpg"
-               alt="NASCAR 86 Meet photo 9 of 22"
-               loading="lazy"
-               decoding="async">
-        </button>
-
-        <button class="gallery-photo reveal" type="button"
-          data-full="assets/gallery/nascar-2026/nascar%20(10%20of%2022).jpg"
-          aria-label="View photo 10 of 22">
-          <img src="assets/gallery/nascar-2026/nascar%20(10%20of%2022).jpg"
-               alt="NASCAR 86 Meet photo 10 of 22"
-               loading="lazy"
-               decoding="async">
-        </button>
-
-        <button class="gallery-photo reveal" type="button"
-          data-full="assets/gallery/nascar-2026/nascar%20(11%20of%2022).jpg"
-          aria-label="View photo 11 of 22">
-          <img src="assets/gallery/nascar-2026/nascar%20(11%20of%2022).jpg"
-               alt="NASCAR 86 Meet photo 11 of 22"
-               loading="lazy"
-               decoding="async">
-        </button>
-
-        <button class="gallery-photo reveal" type="button"
-          data-full="assets/gallery/nascar-2026/nascar%20(12%20of%2022).jpg"
-          aria-label="View photo 12 of 22">
-          <img src="assets/gallery/nascar-2026/nascar%20(12%20of%2022).jpg"
-               alt="NASCAR 86 Meet photo 12 of 22"
-               loading="lazy"
-               decoding="async">
-        </button>
-
-        <button class="gallery-photo reveal" type="button"
-          data-full="assets/gallery/nascar-2026/nascar%20(13%20of%2022).jpg"
-          aria-label="View photo 13 of 22">
-          <img src="assets/gallery/nascar-2026/nascar%20(13%20of%2022).jpg"
-               alt="NASCAR 86 Meet photo 13 of 22"
-               loading="lazy"
-               decoding="async">
-        </button>
-
-        <button class="gallery-photo reveal" type="button"
-          data-full="assets/gallery/nascar-2026/nascar%20(14%20of%2022).jpg"
-          aria-label="View photo 14 of 22">
-          <img src="assets/gallery/nascar-2026/nascar%20(14%20of%2022).jpg"
-               alt="NASCAR 86 Meet photo 14 of 22"
-               loading="lazy"
-               decoding="async">
-        </button>
-
-        <button class="gallery-photo reveal" type="button"
-          data-full="assets/gallery/nascar-2026/nascar%20(15%20of%2022).jpg"
-          aria-label="View photo 15 of 22">
-          <img src="assets/gallery/nascar-2026/nascar%20(15%20of%2022).jpg"
-               alt="NASCAR 86 Meet photo 15 of 22"
-               loading="lazy"
-               decoding="async">
-        </button>
-
-        <button class="gallery-photo reveal" type="button"
-          data-full="assets/gallery/nascar-2026/nascar%20(16%20of%2022).jpg"
-          aria-label="View photo 16 of 22">
-          <img src="assets/gallery/nascar-2026/nascar%20(16%20of%2022).jpg"
-               alt="NASCAR 86 Meet photo 16 of 22"
-               loading="lazy"
-               decoding="async">
-        </button>
-
-        <button class="gallery-photo reveal" type="button"
-          data-full="assets/gallery/nascar-2026/nascar%20(17%20of%2022).jpg"
-          aria-label="View photo 17 of 22">
-          <img src="assets/gallery/nascar-2026/nascar%20(17%20of%2022).jpg"
-               alt="NASCAR 86 Meet photo 17 of 22"
-               loading="lazy"
-               decoding="async">
-        </button>
-
-        <button class="gallery-photo reveal" type="button"
-          data-full="assets/gallery/nascar-2026/nascar%20(18%20of%2022).jpg"
-          aria-label="View photo 18 of 22">
-          <img src="assets/gallery/nascar-2026/nascar%20(18%20of%2022).jpg"
-               alt="NASCAR 86 Meet photo 18 of 22"
-               loading="lazy"
-               decoding="async">
-        </button>
-
-        <button class="gallery-photo reveal" type="button"
-          data-full="assets/gallery/nascar-2026/nascar%20(19%20of%2022).jpg"
-          aria-label="View photo 19 of 22">
-          <img src="assets/gallery/nascar-2026/nascar%20(19%20of%2022).jpg"
-               alt="NASCAR 86 Meet photo 19 of 22"
-               loading="lazy"
-               decoding="async">
-        </button>
-
-        <button class="gallery-photo reveal" type="button"
-          data-full="assets/gallery/nascar-2026/nascar%20(20%20of%2022).jpg"
-          aria-label="View photo 20 of 22">
-          <img src="assets/gallery/nascar-2026/nascar%20(20%20of%2022).jpg"
-               alt="NASCAR 86 Meet photo 20 of 22"
-               loading="lazy"
-               decoding="async">
-        </button>
-
-        <button class="gallery-photo reveal" type="button"
-          data-full="assets/gallery/nascar-2026/nascar%20(21%20of%2022).jpg"
-          aria-label="View photo 21 of 22">
-          <img src="assets/gallery/nascar-2026/nascar%20(21%20of%2022).jpg"
-               alt="NASCAR 86 Meet photo 21 of 22"
-               loading="lazy"
-               decoding="async">
-        </button>
-
-        <button class="gallery-photo reveal" type="button"
-          data-full="assets/gallery/nascar-2026/nascar%20(22%20of%2022).jpg"
-          aria-label="View photo 22 of 22">
-          <img src="assets/gallery/nascar-2026/nascar%20(22%20of%2022).jpg"
-               alt="NASCAR 86 Meet photo 22 of 22"
-               loading="lazy"
-               decoding="async">
-        </button>
-
-      </div>
-    </section>
-
   </main>
 
   <div
     class="lightbox"
-    id="lightbox"
+    id="gallery-lightbox"
+    aria-hidden="true"
     role="dialog"
     aria-modal="true"
     aria-label="Photo viewer"
-    aria-hidden="true"
   >
     <button
       class="lightbox-close"
@@ -267,21 +307,24 @@
     </button>
 
     <button
-      class="lightbox-prev"
+      class="lightbox-nav lightbox-prev"
       type="button"
       aria-label="Previous photo"
     >
       ‹
     </button>
 
-    <img
-      class="lightbox-image"
-      src=""
-      alt=""
-    >
+    <figure>
+      <img class="lightbox-image" src="" alt="" decoding="async">
+
+      <figcaption>
+        <span class="lightbox-title">NASCAR 86 Meet</span>
+        <span class="lightbox-count"></span>
+      </figcaption>
+    </figure>
 
     <button
-      class="lightbox-next"
+      class="lightbox-nav lightbox-next"
       type="button"
       aria-label="Next photo"
     >
@@ -289,8 +332,50 @@
     </button>
   </div>
 
-  <footer class="site-footer">
-    <p>© 2026 RVA 86 Club. All rights reserved.</p>
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div>
+        <img src="assets/logos/rva86-typeface-white.png" alt="RVA 86 Club">
+
+        <p>
+          Connecting BRZ/FRS/86 owners in Richmond, Virginia.
+        </p>
+
+        <p>
+          <a href="mailto:rva86club@gmail.com">
+            rva86club@gmail.com
+          </a>
+        </p>
+      </div>
+
+      <div class="footer-links">
+        <a
+          href="https://www.instagram.com/rva86club/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Instagram
+        </a>
+
+        <a
+          href="https://www.facebook.com/share/g/1Y724RfwZi/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Facebook
+        </a>
+
+        <a
+          href="https://discord.gg/F4TZpSY9qF"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Discord
+        </a>
+
+        <a href="contact.html">Collaborations</a>
+      </div>
+    </div>
   </footer>
 
   <script src="script.js"></script>
