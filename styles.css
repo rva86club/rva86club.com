@@ -231,7 +231,7 @@ strong{color:#fff}
 .merch-card:hover .merch-image img{transform:scale(1.045);filter:grayscale(0) contrast(1.03)}
 .merch-image.decal-preview{background:#000;padding:28px}
 .merch-image.decal-preview img{object-fit:contain;filter:none}
-.merch-body{padding:22px;display:flex;flex-direction:column;gap:10px;flex:1}
+.merch-body{padding:22px;display:flex;flex-direction:column;gap:10px;flex:1;margin-top:-1px;position:relative;background:var(--bg-2)}
 .merch-body h3{font-size:1.15rem;margin:0;text-transform:uppercase;letter-spacing:-.02em}
 .merch-body p{color:var(--muted);margin:0;flex:1}
 .shop-cta{display:inline-flex;margin-top:8px;color:#fff;font-weight:900;text-transform:uppercase;letter-spacing:.08em;font-size:.78rem;border-bottom:2px solid transparent;background-image:var(--gradient);background-repeat:no-repeat;background-size:100% 2px;background-position:0 100%;width:max-content;}
