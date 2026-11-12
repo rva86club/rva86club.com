@@ -206,7 +206,7 @@ strong{color:#fff}
 .page-hero::before{content:"";position:absolute;inset:0;background-image:linear-gradient(90deg,rgba(0,0,0,.86),rgba(0,0,0,.64)),var(--page-photo, url('assets/photos/skyline-lineup.jpg'));background-size:cover;background-position:center;opacity:.48;filter:grayscale(1) contrast(1.06) brightness(.72)}
 .page-hero .container{position:relative;z-index:1}
 .hero h1{font-size:clamp(3rem,7vw,6.8rem);line-height:.84;margin:0 0 18px;text-transform:uppercase;letter-spacing:-.07em;max-width:900px;font-weight:950}
-.page-hero p{color:#d5d5db;font-size:1.18rem;max-width:740px}.about-hero{--page-photo:url('assets/photos/skyline-hangout.jpg')}.calendar-hero{--page-photo:url('assets/photos/ferry-row.jpg')}.submissions-hero{--page-photo:url('assets/photos/skyline-driving.jpg')}.gallery-hero{--page-photo:url('assets/photos/skyline-mountains.jpg')}.merch-hero{--page-photo:url('assets/photos/hero-skyline.jpg')}.contact-hero{--page-photo:url('assets/photos/ferry-meet.jpg')}
+.page-hero p{color:#d5d5db;font-size:1.18rem;max-width:740px}.about-hero{--page-photo:url('assets/photos/skyline-hangout.jpg')}.calendar-hero{--page-photo:url('assets/photos/ferry-row.jpg')}.submissions-hero{--page-photo:url('assets/photos/skyline-driving.jpg')}.gallery-hero{--page-photo:url('assets/photos/skyline-mountains.jpg')}.merch-hero{--page-photo:url('assets/merch/SHOOT%20(2).jpg')}.contact-hero{--page-photo:url('assets/photos/ferry-meet.jpg')}
 .faq details{border:1px solid var(--line);border-radius:18px;padding:18px 20px;background:linear-gradient(145deg, rgba(255,255,255,.06), rgba(255,255,255,.03))}
 .faq details+details{margin-top:12px}
 .faq summary{cursor:pointer;font-weight:900;text-transform:uppercase;}
